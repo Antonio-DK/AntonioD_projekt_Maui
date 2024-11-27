@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AntonioD_projekt_Maui.MainPage"     
+             Title="Glavni Izbornik">
+            <VerticalStackLayout 
+                Padding="20">
+                <Button Text="Izračun valne duljine"
+                                FontSize="20"
+                                Clicked="OnWaveLengthClicked"
+                                BackgroundColor="LightBlue"
+                                TextColor="Black"/>
+
+                <Button Text="Prijenos topline"
+                                FontSize="20"
+                                Clicked="OnHeatTransferClicked"
+                                BackgroundColor="LightCoral"
+                                TextColor="Black"
+                                Margin="0,20,0,0" />
+        </VerticalStackLayout>
+</ContentPage>

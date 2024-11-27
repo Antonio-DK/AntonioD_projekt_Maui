@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AntonioD_projekt_Maui.HeatTransferPage"
+             Title="Prijenos topline">
+
+    <VerticalStackLayout Padding="20">
+        <Label 
+            Text="Unesite masu (m):" 
+            FontSize="18"/>
+        <Entry 
+            x:Name="MassEntry" 
+            Keyboard="Numeric" 
+            Placeholder="npr. 10"/>
+
+        <Label Text="Unesite specifični toplinski kapacitet (c):"
+               FontSize="18"
+               Margin="0,20,0,0"/>
+        <Entry 
+            x:Name="SpecificHeatEntry" 
+            Keyboard="Numeric" 
+            Placeholder="npr. 4.18"/>
+
+        <Label Text="Unesite promjenu temperature (ΔT):"
+               FontSize="18"
+               Margin="0,20,0,0"/>
+        <Entry 
+            x:Name="TempChangeEntry" 
+            Keyboard="Numeric" 
+            Placeholder="npr. 50"/>
+
+        <Button 
+            Text="Izračunaj prijenos topline"
+            Margin="0,20,0,0"
+            Clicked="OnCalculateHeatTransferClicked"/>
+
+        <Label 
+            x:Name="ResultLabel" 
+            FontSize="18" 
+            TextColor="Green" 
+            Margin="0,20,0,0"/>
+    </VerticalStackLayout>
+</ContentPage>
